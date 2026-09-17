@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet" href="home5.css">
+    <link rel="stylesheet" href="cars1.css">
+    <link rel="stylesheet" href="cars.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">AUTO ZONE</div>
+        <nav class="navlink" id="navmenu">
+            <i class="fa-solid fa-xmark close-btn" id="closeBtn"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cars.html" class="active">Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navicons">
+            <i class="fa-solid fa-bars menu-toggle" id="menuToggle"></i>
+        </div>
+    </header>
+<!------------------------------------------------------------------------------------------------------ -->    
+<div id="lexuscars">
+    <div class="brand-top-bar">
+        <div class="deflexus">
+            <img src="img/carlogo/audi.png" class="lexuslogolexus" alt="Audi Logo">
+            <h1 class="logolexuslogo">AUDI</h1>
+        </div>
+        <div class="btnbacklexus">
+            <a href="cars.html" class="backtobrands">&larr; Back to brands</a>
+        </div>
+    </div>
+    <div class="categories">
+        <button data-filter="all" class="BUTT active">All</button>
+        <button data-filter="suv" class="BUTT">SUV</button>
+        <button data-filter="coupe" class="BUTT">Coupe</button>
+    </div>
+    <!---------cars ----------------------------------------------------->
+    <div class="cars">
+        <div class="car suv">
+            <img src="cars/audi1.jpeg" alt="Audi Q7">
+            <div class="car-details">
+                <h2>Audi Q7</h2>
+                <span class="category-tag">SUV • 2024</span>
+                <p class="price">$59,500</p>
+            </div>
+        </div>
+
+        <div class="car suv">
+            <img src="cars/audi2.jpeg" alt="Audi Q8">
+            <div class="car-details">
+                <h2>Audi Q8</h2>
+                <span class="category-tag">SUV • 2024</span>
+                <p class="price">$73,700</p>
+            </div>
+        </div>
+
+        <div class="car suv">
+            <img src="cars/audi3.jpeg" alt="Audi Q5">
+            <div class="car-details">
+                <h2>Audi Q5</h2>
+                <span class="category-tag">SUV • 2024</span>
+                <p class="price">$44,600</p>
+            </div>
+        </div>
+
+        <div class="car coupe">
+            <img src="cars/audi4.jpeg" alt="Audi A5 Coupe">
+            <div class="car-details">
+                <h2>Audi A5 Coupe</h2>
+                <span class="category-tag">Coupe • 2024</span>
+                <p class="price">$47,700</p>
+            </div>
+        </div>
+
+        <div class="car coupe">
+            <img src="cars/audi5.jpeg" alt="Audi RS5 Coupe">
+            <div class="car-details">
+                <h2>Audi RS5 Coupe</h2>
+                <span class="category-tag">Coupe • 2024</span>
+                <p class="price">$78,600</p>
+            </div>
+        </div>
+
+        <div class="car coupe">
+            <img src="cars/audi6.jpeg" alt="Audi TT Coupe">
+            <div class="car-details">
+                <h2>Audi TT Coupe</h2>
+                <span class="category-tag">Coupe • 2024</span>
+                <p class="price">$52,200</p>
+            </div>
+        </div>
+
+        <div class="car suv">
+            <img src="cars/audi7.jpeg" alt="Audi Q3">
+            <div class="car-details">
+                <h2>Audi Q3</h2>
+                <span class="category-tag">SUV • 2024</span>
+                <p class="price">$37,400</p>
+            </div>
+        </div>
+
+        <div class="car suv">
+            <img src="cars/audi8.jpeg" alt="Audi e-tron GT">
+            <div class="car-details">
+                <h2>Audi Q8 e-tron</h2>
+                <span class="category-tag">SUV • 2024</span>
+                <p class="price">$74,400</p>
+            </div>
+        </div>
+
+        <div class="car coupe">
+            <img src="cars/audi9.jpeg" alt="Audi R8 Coupe">
+            <div class="car-details">
+                <h2>Audi R8 Coupe</h2>
+                <span class="category-tag">Coupe • 2024</span>
+                <p class="price">$158,600</p>
+            </div>
+        </div>
+</div>
+
+<!--footer--------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <div class="footer-logo-img">
+                    <img src="img/logo.jpe" alt="Auto Zone Logo">
+                </div>
+                <p>Premium cars for a better tomorrow.</p>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footerlinks">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footercontact">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +20 123 456 7890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@autozone.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</li>
+                </ul>
+            </div>
+
+            <a href="#" class="back">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+
+        <div class="footerbottom">
+            <p>&copy; 2025 Auto Zone. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="cars.js"></script>
+</body>
+</html>

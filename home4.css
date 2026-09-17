@@ -1,0 +1,211 @@
+.reviews {
+    width: 100%;
+    padding: 60px 80px 100px;
+    background-color: #0a0d14;
+    box-sizing: border-box;
+}
+.reviews2 {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    width: 100%;
+}
+
+.card {
+    flex: 0 0 calc((100% - 40px) / 3);
+    background: #0d111a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 28px 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .stars {
+    color: #3581cd;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 13px;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.card h4 {
+    font-size: 13px;
+    color: #8b93a7;
+    font-weight: 400;
+}
+.controls {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.dots {
+    display: flex;
+    gap: 10px;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.dot.active {
+    background: #3581cd;
+}
+.arrows {
+    display: flex;
+    gap: 15px;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #3581cd;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, border-color 0.3s;
+}
+.arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #3581cd;
+}
+/* ----section 4-------------------------------------------------------------------------------------------------- */
+.banner {
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(to right, rgba(10, 13, 20, 0.5) 30%, rgba(10, 13, 20, 0.1)), 
+                url('img/quilia-orGJcWVI6js-unsplash.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+.banner .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.banner .content {
+    max-width: 550px;
+}
+.banner .content h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.banner .content p {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+.banner .cta-btn {
+    display: inline-flex;
+    align-items: left;
+    gap: 12px;
+    padding: 14px 30px;
+    border: 1px solid #f9f9f9;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.banner .cta-btn:hover {
+    background: white;
+    color: #000000;
+}
+
+.banner .image {
+    flex: 1.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner .image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+/*----------Responsive----------------------------*/
+@media (max-width: 680px) {
+    .reviews {
+        padding: 50px 20px 60px;
+    }
+    .card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+}
+/* one card */
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 100%;
+    }
+}
+/* ----responsive banner------------------- */
+@media (max-width: 800px) {
+    .banner {
+        min-height: 450px;
+        padding: 60px 30px;
+        background: linear-gradient(to bottom, 
+                    rgba(10, 13, 20, 0.85) 0%, 
+                    rgba(10, 13, 20, 0.6) 50%, 
+                    rgba(10, 13, 20, 0.9) 100%), 
+                    url('img/quilia-orGJcWVI6js-unsplash.jpg') no-repeat center center / cover;
+    }
+    .banner .content {
+        max-width: 100%;
+    }
+    .banner .content h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    .banner .content p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    .banner .cta-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .banner {
+        min-height: 400px;
+        padding: 50px 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 1.75rem;
+    }
+
+    .banner .content p {
+        font-size: 0.9rem;
+    }
+}

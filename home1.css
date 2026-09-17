@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #0a0d14;
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    width: 100%;
+    background-color: #0b0e14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    z-index: 10;
+}
+.navlink ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.navlink ul li a {
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    position: relative;
+}
+.navlink ul li a:hover,.navlink ul li a.active {
+    color: #3581cd;
+}
+
+.navlink ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 2px;
+    background-color: #3581cd;
+    border-radius: 2px;
+}
+.navicons {
+    display: flex;
+    gap: 22px;
+}
+.navicons .icon-link {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*---- responsive------------------------------------------------------------------------- */
+.menu-toggle, .close-btn {
+    display: none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+@media (max-width: 840px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+    .navlink {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 250px;
+        height: 100vh;
+        background-color: #0b0e14;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        padding: 80px 40px;
+        transition: right 0.4s ease;
+        z-index: 100;
+    }
+    .navlink.active {
+        right: 0; 
+    }
+    .navlink ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .navlink ul li a {
+        font-size: 16px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap');
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #ffffff;
+}

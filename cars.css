@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body#lexuscars {
+    background-color: #0a0d14;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+.brand-top-bar {
+    max-width: 1300px;
+    margin: 30px auto 20px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deflexus {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.lexuslogolexus {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.logolexuslogo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.backtobrands {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+.backtobrands:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px auto 40px;
+    padding: 0 20px;
+    flex-wrap: wrap; 
+}
+
+.BUTT {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #cbd5e1;
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.BUTT:hover,.BUTT.active {
+    background-color: #3581cd;
+    border-color: #3581cd;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(53, 129, 205, 0.3);
+}
+.cars {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+.car {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.car:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: #3581cd;
+    box-shadow: 0 10px 25px rgba(53, 129, 205, 0.15);
+}
+.car img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.car-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.car-details h2 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.category-tag {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+.price {
+    color: #3581cd;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/*----------------Responsive Rules----------------------------------------*/
+@media (max-width: 730px) {
+    .brand-top-bar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .deflexus {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .cars {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+}

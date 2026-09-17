@@ -1,0 +1,70 @@
+.contact {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    background: linear-gradient(to right, 
+        rgba(10, 13, 20, 0.9) 0%, 
+        rgba(10, 13, 20, 0.6) 45%, 
+        rgba(10, 13, 20, 0.1) 100%), 
+    url('img/jack-white-pkvecakeQjo-unsplash.jpg') no-repeat center/cover;
+}
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(10, 13, 20, 0.5) 40%, transparent);
+}
+.hcontent {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+}
+.contact .main-title {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact .description {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+/*-----------Responsive---------------------------------*/
+@media (max-width: 700px) {
+    .contact {
+        height: 280px;
+        padding: 0 5%;
+        background: linear-gradient(
+            to right, 
+            rgba(10, 13, 20, 0.95) 0%, 
+            rgba(10, 13, 20, 0.7) 60%, 
+            rgba(10, 13, 20, 0.2) 100%
+        ), 
+        url('img/jack-white-pkvecakeQjo-unsplash.jpg') no-repeat center/cover;
+    }
+    .contact .main-title {
+        font-size: 2.2rem;
+    }
+    .contact .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        height: 240px;
+    }
+    .contact .main-title {
+        font-size: 1.8rem;
+    }
+    .contact .description {
+        font-size: 0.9rem;
+    }
+}

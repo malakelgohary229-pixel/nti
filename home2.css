@@ -1,0 +1,142 @@
+.hero-wrapper {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(to right, rgba(10, 13, 20, 0.85) 35%, rgba(10, 13, 20, 0.15) 75%), 
+                url('img/hero-fleet.png') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 150px 80px 40px;
+}
+.hero-text {
+    max-width: 550px;
+}
+.hero-text .sub-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #9ca3af;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+.hero-text .main-title {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+.hero-text .description {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-bottom: 35px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background: #ffffff;
+    color: #000000;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.features .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.features .icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+}
+.features .text h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+.features .text p {
+    font-size: 12px;
+    color: #8b93a7;
+}
+/*----------Responsive----------------------------*/
+@media (max-width: 950px) {
+    .hero-wrapper {
+        padding: 120px 40px 30px;
+        background: linear-gradient(to bottom, 
+                    rgba(10, 13, 20, 0.88) 0%, 
+                    rgba(12, 17, 26, 0.514) 50%), 
+                    url('img/hero-fleet.png') no-repeat center right / cover;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero-text .main-title {
+        font-size: 34px;
+    }
+}
+/* -----boxes--------------- */
+@media (max-width: 650px) {
+    .hero-wrapper {
+        padding: 100px 20px 25px;
+        background-position: 75% center;
+    }
+    .hero-text .main-title {
+        font-size: 32px;
+    }
+    .features {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px 10px;
+    }
+    .features .item {
+        width: 48%;
+    }
+    .features .item:nth-child(3) {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* 3boxes-------------------------------------------------------- */
+@media (max-width: 440px) {
+    .hero-text .main-title {
+        font-size: 26px;
+    }
+    .features {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .features .item,
+    .features .item:nth-child(3) {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
